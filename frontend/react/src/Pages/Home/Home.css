@@ -1,0 +1,11 @@
+.home__body {
+  display: flex;
+  margin-top: 60px; /* Adjust based on header height */
+}
+
+.home__content {
+  flex: 1;
+  margin-left: 200px; /* Same width as the sidebar */
+  padding: 20px;
+  overflow: auto;
+}

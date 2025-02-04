@@ -1,0 +1,38 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -200px; /* Hidden by default */
+  transition: left 0.3s ease-in-out;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.sidebar--open {
+  left: 0; /* Slide in when open */
+}
+
+.sidebar__close {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.sidebar__button {
+  padding: 10px 15px;
+  background-color: #f9f9f9;
+  color: #333;
+  border: 1px solid #f9f9f9;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 0.3s;
+}
